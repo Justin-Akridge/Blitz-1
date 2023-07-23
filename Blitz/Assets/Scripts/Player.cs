@@ -26,6 +26,7 @@ public class Player : MonoBehaviour {
   }
 
   private void Update() {
+    //changed to spacebar jump only
     if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0)) {
       direction = Vector3.up * strength;
     }
@@ -53,4 +54,8 @@ public class Player : MonoBehaviour {
       FindObjectOfType<UpdateScore>().Reset();
     }   
   }
+
+//  public bool canAttack() {
+//    return horizontalInput == 0;
+//  }
 }

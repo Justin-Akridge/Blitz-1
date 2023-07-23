@@ -21,7 +21,7 @@ public class GameManager : MonoBehaviour {
     scoreText.text = score.ToString();
     playButton.SetActive(false);
     gameOver.SetActive(false);
-    GetComponent<UpdateScore>().Update();
+    //GetComponent<UpdateScore>().Update();
     Time.timeScale = 1f;
     player.enabled = true;
 
